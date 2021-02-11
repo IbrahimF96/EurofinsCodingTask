@@ -11,10 +11,12 @@ Bonus:
 Each time the action method is called the start number, end number and the date/time of the call should be stored in a database. Use EF code first for this.
 
 Other considerations:
+
 •	The logic to determine the text to display based on the number input may need to be reused in other areas of the application in the future, this should be considered in the design.
 
 •	Text on the web page should be updated without causing a full page refresh
+
 •	Any server-side code should be written in C#. Client-side code should be written in JavaScript (including any client side libraries you wish to use). 
-•	The look and feel of the web page should be considered as an opportunity for you to demonstrate your design skills. 
-Running your code
-Code should compile and run with Visual Studio 2017 or Visual Studio 2019. You can provide through public Github repository. Please do not include DLLs or executables as these will be compiled or downloaded using NuGet package restore.
+
+•	The look and feel of the web page should be considered as an opportunity for you to demonstrate your design skills.
+

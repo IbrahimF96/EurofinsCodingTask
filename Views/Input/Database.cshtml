@@ -1,0 +1,41 @@
+﻿@model IEnumerable<EurofinsCodingTask.Models.UserInput>
+
+@{
+    ViewBag.Title = "Database";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Database</h2>
+
+<p>
+    @Html.ActionLink("Add New Submission", "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Start)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.End)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Start)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.End)
+        </td>
+    </tr>
+}
+
+</table>
